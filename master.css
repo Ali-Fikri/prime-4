@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: url("imgs/wall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 62.5rem;
+  margin: 2rem auto;
+}
+
+@font-face {
+  font-family: "customletter";
+  src: url("./fonts/letter.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "title";
+  src: url("./fonts/title.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "writtenletter";
+  src: url("./fonts/writtenletter.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "comic";
+  src: url("./fonts/comic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "cursive-font";
+  src: url("./fonts/cursive.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "berlin";
+  src: url("./fonts/berlin.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "cursif";
+  src: url("./fonts/cursif.TTF") format("truetype");
+}
+
+.customletter {
+  font-family: "customletter", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.title {
+  font-family: "title", sans-serif;
+}
+
+.writtenletter {
+  font-family: "writtenletter", sans-serif;
+}
+
+.cursive-font {
+  font-family: "cursive-font", sans-serif;
+}
+
+.berlin {
+  font-family: "berlin", sans-serif;
+}
+
+.cursif {
+  font-family: "cursif", sans-serif;
+}
+
+.unite-title {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  background: url("../../../../imgs/green-brush.png");
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.25rem;
+  color: #df5b2c;
+  padding: 0 2rem;
+  text-shadow: 2px 2px 0px #ffffff;
+  justify-self: center;
+}
+
+.unite-subtitle {
+  color: #26408e;
+  font-size: 2.875rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+/* Common styles for both buttons */
+.brutalist-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 8.875rem;
+  height: 8.875rem;
+  color: #e5dede;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Styles for the first button */
+.button-1 {
+  background-color: #df6437;
+  border: 3px solid #e2a48d;
+  border-radius: 12px;
+  box-shadow: 0.25rem 0.25rem 1px #000000;
+}
+
+.button-1:hover {
+  background-color: #dd4d19;
+  border-color: #030504;
+  transform: translate(-6px, -6px) rotate(1deg);
+  box-shadow: 0.625rem 0.625rem 0 #000000,
+    15px 15px 20px rgba(64, 164, 122, 0.2);
+}
+
+.button-1::before,
+.button-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+.button-1::before {
+  left: -100%;
+}
+.button-1::after {
+  left: 100%;
+}
+
+.button-1:hover::before {
+  animation: swipeRight 1.5s infinite;
+}
+.button-1:hover::after {
+  animation: swipeLeft 1.5s infinite;
+}
+
+@keyframes swipeRight {
+  100% {
+    transform: translateX(200%) skew(-45deg);
+  }
+}
+
+@keyframes swipeLeft {
+  100% {
+    transform: translateX(-200%) skew(-45deg);
+  }
+}
+
+/* Hover effects */
+
+.brutalist-button:hover .openai-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.bruta.brutalist-button:hover .openai-text {
+  opacity: 1;
+  max-height: 3.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Styles for the OpenAI logo and text */
+.openai-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 3;
+  scale: 0.9;
+}
+
+.openai-icon {
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.openai-text {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+  text-align: center;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 3;
+}
+
+.button-text span:first-child {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.button-text span:last-child {
+  font-size: 1.25rem;
+}
+
+/* Hover effects */
+
+.brutalist-button:hover .openai-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.brutalist-button:hover .button-text,
+.brutalist-button:hover .openai-text {
+  opacity: 1;
+  max-height: 3.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Animation for the OpenAI logo */
+@keyframes spin-and-zoom {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.brutalist-button:hover .openai-icon {
+  animation: spin-and-zoom 4s cubic-bezier(0.25, 0.8, 0.25, 1) infinite;
+}
+
+.brutalist-button:hover .openai-text {
+  text-shadow: 2px 2px 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+.brutalist-button:active .openai-icon,
+.brutalist-button:active .openai-text,
+.brutalist-button:active .button-text {
+  transform: scale(0.95);
+}
+
+.navigation {
+  width: 62.5rem;
+  margin: 0rem auto;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.875rem;
+}
+
+.inner-letter-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.inner-letter-container:hover {
+  scale: 1.1;
+}
+
+.first-row {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.first-row img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.second-row {
+  font-family: customletter;
+}
+
+.second-row span {
+  color: #d1232a;
+  text-shadow: 2px 2px 0px #ffffff;
+}
+
+.third-row {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.first-char {
+  font-family: comic;
+}
+
+.fourth-char {
+  font-family: customletter;
+}
+
+.first-container {
+  border: 0.25rem solid rgba(0, 175, 239, 1);
+}
+
+.first-container .third-row {
+  background-color: rgba(0, 175, 239, 0.2);
+}
+
+.second-container {
+  border: 0.25rem solid rgba(209, 35, 41, 1);
+}
+
+.second-container .third-row {
+  background-color: rgba(209, 35, 41, 0.2);
+}
+
+.third-container {
+  border: 0.25rem solid rgba(64, 174, 73, 1);
+}
+
+.third-container .third-row {
+  background-color: rgba(64, 174, 73, 0.2);
+}
+
+.first-letter {
+  opacity: 50%;
+}
+
+.second-letter {
+  opacity: 20%;
+}
+@media (max-width: 768px) {
+  .background {
+    height: auto;
+  }
+
+  .unite-title {
+    font-size: 2rem;
+    width: 90%;
+    background-size: contain;
+  }
+
+  .unite-subtitle {
+    font-size: inherit;
+  }
+
+  .observe {
+    font-size: 5rem;
+    background-size: cover;
+  }
+
+  .letters-box {
+    padding: 0;
+  }
+
+  .letters-container {
+    padding: 2rem 3rem;
+    margin: 1rem;
+  }
+
+  .script-title {
+    font-size: 2rem;
+  }
+
+  .brutalist-button {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .page {
+    width: auto !important;
+  }
+
+  .letter {
+    font-size: 5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .navigation {
+    padding: 0 1rem;
+    width: auto;
+  }
+
+  .section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .inner-letter-container {
+    font-size: 5rem;
+  }
+
+  .first-row img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .third-row {
+    justify-content: space-evenly;
+  }
+
+  .images-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .images-container img {
+    width: auto;
+  }
+
+  .question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+  }
+
+  .sentence {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+  }
+
+  .sentence .word {
+    font-size: 2rem !important;
+  }
+
+  .sentence .drop-zone {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    font-size: 3rem !important;
+  }
+
+  .feedback {
+    font-size: 3rem;
+  }
+
+  .words-bank {
+    min-height: 6rem;
+  }
+  body {
+    background: url("imgs/wall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}

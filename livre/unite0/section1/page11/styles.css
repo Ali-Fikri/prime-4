@@ -1,0 +1,84 @@
+.section {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 0 !important;
+}
+
+.letters-container {
+  padding: 2rem 4rem;
+  margin-bottom: 2.5rem;
+  border: 0.625rem solid #df5b2c;
+  background-color: #f9fbfc;
+  border-radius: 2rem;
+  background-size: cover;
+}
+
+.script-title,
+.cursive-title {
+  background: url("../../../../imgs/yellow-brush.png");
+  background-size: cover;
+  width: fit-content;
+  padding: 0 2rem;
+  background-repeat: no-repeat;
+  font-size: 3rem;
+}
+
+.script-letter {
+  font-size: 52px;
+  font-weight: 100;
+}
+
+.container {
+  border: 2px solid #4db7ff;
+  padding: 15px 20px;
+  width: 900px;
+  max-width: 900px;
+  /* margin: 0 auto; */
+  color: #000;
+}
+.remarque-title {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #e87d51;
+  margin-bottom: 10px;
+}
+.line {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+.highlight-orange {
+  color: #e87d51;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.example-box {
+  background-color: #c5d7e3;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+
+  color: #3b3b3b;
+  margin-top: 8px;
+  display: inline-block;
+  max-width: 100%;
+}
+.test {
+  font-size: 2rem;
+}
+.example-box em {
+  font-style: normal;
+  color: #e87d51;
+  font-weight: 700;
+  font-size: 2rem;
+
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .images-container img {
+    width: 16rem !important;
+    /* height: 15rem; */
+  }
+}

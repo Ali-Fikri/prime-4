@@ -1,0 +1,127 @@
+.letters-container {
+  padding: 4rem 6rem;
+  margin-bottom: 2.5rem;
+  border: 0.625rem solid #df5b2c;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.letter:hover {
+  background-color: #f9dc5c;
+  color: #000;
+  font-weight: bold;
+}
+
+.script-title,
+.cursive-title {
+  background: url("../../../../imgs/yellow-brush.png");
+  background-size: cover;
+  width: fit-content;
+  padding: 0 2rem;
+  background-repeat: no-repeat;
+  font-size: 2.5rem;
+}
+
+.section {
+  display: flex !important;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 5rem !important;
+}
+
+.section img {
+  width: 10rem;
+}
+.inner-letter-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.inner-letter-container:hover {
+  scale: 1.1;
+}
+
+.first-row {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.first-row img {
+  width: 5rem;
+}
+
+.second-row {
+  font-family: customletter;
+}
+
+.second-row span {
+  color: #d1232a;
+  text-shadow: 2px 2px 0px #ffffff;
+}
+
+.third-row {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.first-char {
+  font-family: comic;
+}
+
+.fourth-char {
+  font-family: customletter;
+}
+
+.second-row {
+  margin: auto 0 0rem 0 !important;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.image-wrapper {
+  border: 4px solid transparent;
+  /* border-radius: 50%; */
+  padding: 5px;
+  cursor: pointer;
+  transition: border 0.3s ease;
+  overflow: hidden;
+}
+.selected {
+  border-color: green;
+}
+button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: "title", sans-serif;
+  background-color: rgb(205, 230, 204);
+  color: rgb(5, 66, 42);
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: rgb(114, 180, 111);
+}
+
+@media (max-width: 768px) {
+  .image-wrapper img {
+    width: 15rem !important;
+  }
+}
