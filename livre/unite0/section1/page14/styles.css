@@ -1,0 +1,82 @@
+.board {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.title {
+  color: #df5b2c;
+  font-size: 3rem;
+}
+.box {
+  position: relative;
+  width: 100%;
+  & .box-image {
+    width: 100%;
+  }
+  & .syllabe {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translateX(-50%);
+  }
+  & .span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translateX(-50%);
+  }
+  & .lily {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translateX(-50%);
+  }
+  & .girl {
+    width: 13rem;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+  }
+}
+.span {
+  color: #df5b2c;
+}
+
+@media (max-width: 990px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .box {
+    & .girl {
+      width: 5rem;
+    }
+    & .syllabe {
+      font-size: 1rem;
+    }
+    & .span {
+      font-size: 1rem;
+      transform: translateX(-50%);
+    }
+    & .lily {
+      font-size: 0.8rem;
+    }
+  }
+}
