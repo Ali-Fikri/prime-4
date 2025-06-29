@@ -6,6 +6,12 @@ choices.forEach((choice) => {
       playClapSound();
       choice.classList.add("correct");
     } else {
+      choice.classList.add("incorrect");
+      choice.classList.add("shake");
+      setTimeout((_) => {
+        choice.classList.remove("incorrect");
+        choice.classList.remove("shake");
+      }, 400);
       playIncorrectSound();
     }
   });

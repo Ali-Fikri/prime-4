@@ -93,11 +93,22 @@
   .board {
     padding: 2rem 0.5rem;
   }
-  .script-title {
-    font-size: 1.5rem;
-    padding: 2rem 0;
+  .container #title {
+    font-size: 1.3rem;
   }
-  .column .column-title {
-    font-size: 1rem;
+  #box-1 {
+    width: 6rem;
+  }
+  #box-2 {
+    width: 5.5rem;
+  }
+  #box-3 {
+    width: 4.5rem;
+  }
+  #box-4 {
+    width: 7rem;
+  }
+  #box-5 {
+    width: 5rem;
   }
 }
