@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 0 - Ouiiiii, c’est la récré!</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1
+          class="unite-title title"
+          data-type="file"
+          data-audio="../../../../sounds/unite1.mp3"
+          style="margin-bottom: 2.5rem">
+          <span class="unite-subtitle"
+            ><span style="color: #df5b2c">0</span> <br />Unité</span
+          >Ouiiiii, c’est la récré!
+        </h1>
+      </header>
+
+      <div class="board">
+        <section class="question-container">
+          <div class="question">
+            1. La cloche de la récré sonne à 11 heures.
+            <div class="choices">
+              (<span class="choice" isCorrect="false">Oui</span> /
+              <span class="choice" isCorrect="true">Non</span> )
+            </div>
+          </div>
+
+          <div class="question">
+            2. Lucas aime manger avec ses copains.
+            <div class="choices">
+              (<span class="choice" isCorrect="true">Oui</span> /
+              <span class="choice" isCorrect="false">Non</span> )
+            </div>
+          </div>
+          <div class="question">
+            3. On joue dans la salle de classe .
+            <div class="choices">
+              (<span class="choice" isCorrect="false">Oui</span> /
+              <span class="choice" isCorrect="true">Non</span> )
+            </div>
+          </div>
+        </section>
+        <section class="images-container">
+          <img src="./imgs/1-2.png" alt="girl" class="girl" />
+          <img src="./imgs/1-1.png" alt="boy" class="boy" />
+        </section>
+      </div>
+    </div>
+    <audio
+      id="clapSound"
+      src="../../../../sounds/clap.mp3"
+      preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../../index.html" class="button-container">
+          <button class="brutalist-button openai button-1">
+            <div class="openai-logo">
+              <img src="../../../../imgs/previous.png" alt="Previous" />
+            </div>
+            <div class="button-text">
+              <span>Accueil</span>
+            </div>
+          </button>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../page14/index.html" class="button-container">
+          <button class="brutalist-button openai button-1">
+            <div class="openai-logo">
+              <img src="../../../../imgs/next.png" alt="next" />
+            </div>
+            <div class="button-text">
+              <span>Page suivante</span>
+            </div>
+          </button>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../master.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
