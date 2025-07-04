@@ -14,6 +14,7 @@ body {
 }
 
 .title {
+  font-size: 2.3rem;
   color: #df5b2c;
   margin-bottom: 1rem;
 }
@@ -72,8 +73,12 @@ section,
     padding: 2rem 0.5rem;
   }
 
-  .section-title {
+  .title {
     font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
   }
 
   .image {
