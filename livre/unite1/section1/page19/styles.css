@@ -119,4 +119,23 @@ span {
 }
 
 @media (max-width: 990px) {
+  .box {
+    width: 18rem;
+  }
+  #boy {
+    width: 7rem;
+    transform: translate(60%, -50%);
+    -webkit-transform: translate(60%, -50%);
+    -moz-transform: translate(60%, -50%);
+    -ms-transform: translate(60%, -50%);
+    -o-transform: translate(60%, -50%);
+  }
+  #girl {
+    width: 5rem;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+  }
 }
