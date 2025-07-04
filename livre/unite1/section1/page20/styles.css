@@ -1,0 +1,102 @@
+.board {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.title {
+  color: #df5b2c;
+  font-size: 3rem;
+}
+.box {
+  position: relative;
+  width: 100%;
+  & .box-image {
+    width: 100%;
+  }
+  & .les-sons {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translateX(-50%);
+  }
+  & .span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translateX(-50%);
+  }
+  & .lily {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translateX(-50%);
+  }
+  & .robot {
+    width: 4rem;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+  }
+}
+.span,
+span {
+  color: #df5b2c;
+}
+
+.ex {
+  position: absolute;
+  width: 90%;
+  bottom: 30%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translateX(-50%);
+  padding: 1rem;
+  border: 2px solid #00adee;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 990px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .box {
+    & .robot {
+      width: 2.5rem;
+    }
+    & .les-sons {
+      font-size: 1rem;
+    }
+    & .span {
+      font-size: 1rem;
+      transform: translateX(-50%);
+    }
+    & .lily {
+      font-size: 0.8rem;
+    }
+    .ex {
+      font-size: 1rem;
+      padding: 0.5rem;
+      bottom: 25%;
+    }
+  }
+}

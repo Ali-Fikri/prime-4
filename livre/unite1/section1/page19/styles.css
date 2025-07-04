@@ -1,0 +1,122 @@
+.board {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.title {
+  color: #df5b2c;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.box {
+  position: relative;
+  width: 21rem;
+  background-color: #f9f9f9;
+  padding: 2.3rem 1rem 1rem 1rem;
+  margin: 2rem auto;
+  border: 1px solid;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+#etre {
+  background-color: #f0a8ba;
+  border-color: #da335f;
+
+  & .box-title {
+    background-color: #da335f;
+  }
+}
+#avoir {
+  background-color: #9bd9cb;
+  border-color: #2f9b8c;
+
+  & .box-title {
+    background-color: #2f9b8c;
+  }
+}
+
+span {
+  &.red {
+    color: #da335f;
+  }
+  &.yellow {
+    color: #fff85b;
+  }
+}
+
+.box-title {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+  color: #f9f9f9;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#boy,
+#girl {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  height: auto;
+  transform: translate(80%, -50%);
+  -webkit-transform: translate(80%, -50%);
+  -moz-transform: translate(80%, -50%);
+  -ms-transform: translate(80%, -50%);
+  -o-transform: translate(80%, -50%);
+  z-index: 1;
+}
+#boy {
+  width: 9rem;
+}
+#girl {
+  width: 7rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+@media (max-width: 990px) {
+}
