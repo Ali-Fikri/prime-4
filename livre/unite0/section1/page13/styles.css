@@ -22,6 +22,11 @@ span {
   color: #df5b2c;
 }
 
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 .section-header {
   background-color: #c2d6ef;
   padding: 0.5rem;
@@ -145,5 +150,9 @@ span {
       -ms-border-radius: 1rem;
       -o-border-radius: 1rem;
     }
+  }
+
+  .title {
+    font-size: 1.5rem;
   }
 }
