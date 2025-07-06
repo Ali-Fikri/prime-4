@@ -10,17 +10,21 @@ body {
 }
 
 .board {
-  background: url("../../imgs/board.png") no-repeat center center/contain;
-  width: 80%;
-  height: 80%;
+  position: relative;
+  width: 65%;
+  height: 60%;
   margin: auto;
-  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 4rem;
-  position: relative;
   font-size: 1.5vw; /* Add this to scale text inside the board */
+
+  margin: 6rem auto 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: #f172ac 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .title {
@@ -43,21 +47,26 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.3s;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .back-btn {
+  position: absolute;
+  bottom: -25%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
   transition: transform 0.2s;
 }
 
 .unit:hover,
 .back-btn:hover {
   transform: scale(1.1);
-}
-
-.back-btn {
-  position: absolute;
-  left: 10rem;
-  bottom: -4rem;
 }
 
 .back-btn img {
@@ -70,12 +79,10 @@ body {
   }
 
   .board {
-    font-size: 3vw;
+    width: 90%;
     height: auto;
-    background: white;
     padding: 2rem;
-    border-radius: 2rem;
-    margin-top: 5rem;
+    margin: 3rem auto 1.5rem auto;
   }
 
   .title {
@@ -92,6 +99,8 @@ body {
   }
 
   .unit {
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
   }
 

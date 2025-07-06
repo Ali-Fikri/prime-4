@@ -13,15 +13,29 @@ html {
 }
 
 .board {
-  background: url("../../imgs/board.png") no-repeat center center/contain;
-  width: 90%;
-  height: 90%;
+  position: relative;
+  width: 65%;
+  height: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 4rem;
-  position: relative;
+  margin: 6rem auto 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: #f172ac 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.footer {
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .title {
@@ -87,12 +101,10 @@ html {
   }
 
   .board {
-    font-size: 2vw;
+    width: 90%;
     height: auto;
-    background: white;
     padding: 2rem;
-    border-radius: 2rem;
-    margin-top: 10rem;
+    margin: 3rem auto 1.5rem auto;
   }
 
   .title {

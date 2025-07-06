@@ -115,78 +115,46 @@ body {
 }
 
 /* Common styles for both buttons */
-.brutalist-button {
+.button {
+  background-color: #f27a2c;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 8.875rem;
-  height: 8.875rem;
-  color: #e5dede;
-  font-weight: bold;
-  text-decoration: none;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  align-items: center;
+  box-shadow: #e089b0 0px 7px 29px 0px;
+  border: #f27a2c solid 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
-/* Styles for the first button */
-.button-1 {
-  background-color: #df6437;
-  border: 3px solid #e2a48d;
-  border-radius: 12px;
-  box-shadow: 0.25rem 0.25rem 1px #000000;
+.button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
-.button-1:hover {
-  background-color: #dd4d19;
-  border-color: #030504;
-  transform: translate(-6px, -6px) rotate(1deg);
-  box-shadow: 0.625rem 0.625rem 0 #000000,
-    15px 15px 20px rgba(64, 164, 122, 0.2);
+.home-btn {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
-
-.button-1::before,
-.button-1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
-  transition: 0.6s;
-}
-
-.button-1::before {
-  left: -100%;
-}
-.button-1::after {
-  left: 100%;
-}
-
-.button-1:hover::before {
-  animation: swipeRight 1.5s infinite;
-}
-.button-1:hover::after {
-  animation: swipeLeft 1.5s infinite;
-}
-
-@keyframes swipeRight {
-  100% {
-    transform: translateX(200%) skew(-45deg);
-  }
-}
-
-@keyframes swipeLeft {
-  100% {
-    transform: translateX(-200%) skew(-45deg);
-  }
+.home-btn:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale();
+  -moz-transform: scale();
+  -ms-transform: scale();
+  -o-transform: scale();
 }
 
 /* Hover effects */
