@@ -116,6 +116,8 @@ body {
 
 /* Common styles for both buttons */
 .button {
+  width: 8rem;
+  height: 8rem;
   background-color: #f27a2c;
   display: flex;
   justify-content: center;
@@ -143,12 +145,20 @@ body {
 }
 
 .home-btn {
+  width: 10rem;
+  height: 10rem;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
+
+.home-btn img {
+  width: 100%;
+  height: 100%;
+}
+
 .home-btn:hover {
   transform: scale(1.1);
   -webkit-transform: scale();
@@ -514,5 +524,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+  }
+
+  .button,
+  .home-btn {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .home-btn {
+    width: 8rem;
+    height: 8rem;
   }
 }

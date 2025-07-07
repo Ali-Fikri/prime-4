@@ -66,6 +66,8 @@ html {
 .back-btn,
 .home-btn {
   transition: transform 0.2s;
+  width: 5rem;
+  height: 5rem;
 }
 
 .unit:hover,
@@ -90,9 +92,6 @@ html {
   bottom: 0rem;
 }
 
-.home-btn img {
-  width: 5rem;
-}
 /* Small screen adjustments */
 @media (max-width: 768px) {
   .background {
