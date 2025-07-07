@@ -1,0 +1,147 @@
+.board {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 3rem 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+section.table {
+  width: 80%;
+  justify-content: space-around;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  & .cell {
+    width: 23%;
+    height: 6%;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "berlin", Times, serif;
+    -webkit-text-stroke: 1px white;
+
+    &.yellow {
+      background-color: #fff78a;
+    }
+    &.cyan-1 {
+      background-color: #4dabf7;
+    }
+    &.cyan-2 {
+      background-color: #54c2f5;
+    }
+    &.cyan-3 {
+      background-color: #b2f7f9;
+    }
+  }
+
+  & .image {
+    width: 10%;
+    height: auto;
+  }
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #54c2f5;
+}
+
+.box {
+  width: 50%;
+  height: auto;
+  padding: 1rem;
+  background-color: #f87f53;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.sentences {
+  width: 30%;
+  height: auto;
+
+  .sentence {
+    background-color: #f87f53;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "berlin", Times, serif;
+    -webkit-text-stroke: 1px white;
+    margin-bottom: 0.5rem;
+    border-radius: 30%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+  }
+}
+
+.examples {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+
+  font-size: 1.5rem;
+  margin-left: 3rem;
+
+  & span {
+    color: crimson;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 990px) {
+  .board {
+    padding: 2rem 0.5rem;
+    border: 0.3rem solid #df5b2c;
+  }
+
+  .container {
+    & .cell {
+      font-size: 1.3rem;
+      width: 25%;
+      padding: 3px;
+    }
+  }
+
+  .box {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .sentences .sentence {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .examples {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+}
