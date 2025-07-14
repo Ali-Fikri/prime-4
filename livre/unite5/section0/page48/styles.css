@@ -1,0 +1,113 @@
+body {
+  background-image: url("../../../unite0/section0/page9/imgs/back.png");
+  background-size: cover;
+}
+
+.board {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-title {
+  width: 100%;
+  position: relative;
+  padding: 3rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+#headset {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  top: 2rem;
+  left: 0;
+}
+
+.second-title {
+  color: #00adee;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.images-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.image {
+  width: 45%;
+  height: auto;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -ms-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+}
+
+@media (max-width: 990px) {
+  .board {
+    width: 95%;
+    padding: 2rem;
+    border-width: 3px;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    padding: 2rem 0;
+  }
+  #headset {
+    width: 2rem;
+  }
+
+  .second-title {
+    font-size: 1.5rem;
+  }
+
+  .images-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    & .image {
+      width: 45%;
+      height: auto;
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+    }
+  }
+}
