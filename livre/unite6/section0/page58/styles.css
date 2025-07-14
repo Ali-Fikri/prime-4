@@ -1,0 +1,74 @@
+body {
+  background-image: url("../../../unite0/section0/page9/imgs/back.png");
+  background-size: cover;
+}
+
+.board {
+  position: relative;
+  background-image: url("./imgs/1-1.png");
+  background-size: cover;
+  background-color: white;
+  width: 80%;
+  height: 100vh;
+  padding: 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-title {
+  width: 100%;
+  position: relative;
+  padding: 3rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+#headset {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  top: 2rem;
+  left: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  --webkit-text-stroke: 1px white;
+
+  font-family: "berlin", Times, serif;
+}
+
+@media (max-width: 990px) {
+  .board {
+    width: 95%;
+    height: 85vh;
+    padding: 2rem;
+    border-width: 3px;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    padding: 1.5rem 0;
+  }
+  #headset {
+    width: 2.2rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+}
