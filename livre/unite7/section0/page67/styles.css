@@ -1,0 +1,161 @@
+body {
+  background-image: url("../../../unite0/section0/page9/imgs/back.png");
+  background-size: cover;
+}
+
+.board {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-title {
+  width: 100%;
+  position: relative;
+  padding: 3rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+
+  font-size: 2rem;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 3px;
+}
+
+.box {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+img {
+  width: auto;
+  height: 6rem;
+}
+
+.second-col {
+  padding-left: 2rem;
+  border-left: 1px dotted #00adee;
+}
+
+.second-title {
+  width: 90%;
+  color: #df5b2c;
+  background-color: rgb(29, 195, 195);
+  font-size: 2rem;
+  text-align: center;
+  --webkit-text-stroke: 1px white;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.eye {
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+@media (max-width: 990px) {
+  .board {
+    width: 95%;
+    padding: 2rem;
+    border-width: 3px;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    padding: 2rem 0;
+  }
+
+  .second-title {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .col {
+    width: 90%;
+    font-size: 1.3rem;
+    gap: 1rem;
+  }
+
+  .row {
+    width: 90%;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  img {
+    height: 3rem;
+  }
+
+  .second-col {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .eye {
+    height: 1.5rem;
+    margin: 0.5rem;
+  }
+}
