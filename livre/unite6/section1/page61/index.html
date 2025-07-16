@@ -10,50 +10,75 @@
   <body>
     <div class="page">
       <div class="board">
-        <div class="images-container">
-          <img
-            class="image"
-            src="./imgs/1-1.png"
-            alt="scene"
-            data-type="file"
-            data-audio="./sounds/1.mp3" />
-          <img
-            class="image"
-            src="./imgs/1-2.png"
-            alt="scene"
-            data-type="file"
-            data-audio="./sounds/2.mp3" />
-          <img
-            class="image"
-            src="./imgs/1-3.png"
-            alt="scene"
-            data-type="file"
-            data-audio="./sounds/3.mp3" />
-          <img
-            class="image"
-            src="./imgs/1-4.png"
-            alt="scene"
-            data-type="file"
-            data-audio="./sounds/4.mp3" />
-          <img
-            class="image"
-            src="./imgs/1-5.png"
-            alt="scene"
-            data-type="file"
-            data-audio="./sounds/5.mp3" />
-          <img
-            class="image"
-            src="./imgs/1-6.png"
-            alt="scene"
-            data-type="file"
-            data-audio="./sounds/6.mp3" />
+        <img
+          class="image"
+          src="./imgs/1.png"
+          alt="scene"
+          data-type="file"
+          data-audio="./sounds/1.mp3" />
+        <img
+          class="image"
+          src="./imgs/2.png"
+          alt="scene"
+          data-type="file"
+          data-audio="./sounds/2.mp3" />
+
+        <div class="ex" data-type="file" data-audio="./sounds/ex.mp3">
+          <h3 class="title">Exemples :</h3>
+          <p>- Je vais <span>au</span> collège.</p>
+          <p>- Tu vas <span>à la</span> piscine.</p>
+          <p>- Nous allons <span>aux</span> pyramides.</p>
+          <p>- Ils vont <span>à l’</span> hôpital.</p>
         </div>
+
+        <div class="question">
+          <h3 class="title">
+            1- Complète par
+            <span style="color: yellow">au , à la , à l’</span> ou
+            <span style="color: yellow">aux</span> :
+          </h3>
+          <p>
+            1- Je vais <input type="text" answer="a l'" class="input" /> école.
+          </p>
+          <p>
+            2- Ils vont
+            <input type="text" answer="au" class="input" /> théâtre.
+          </p>
+          <p>
+            3- Vous allez
+            <input type="text" answer="aux" class="input" /> marchés.
+          </p>
+          <p>
+            4- Alice et Jean vont
+            <input type="text" answer="a la" class="input" /> plage.
+          </p>
+          <p>
+            5- Nous allons
+            <input type="text" answer="au" class="input" /> supermarché.
+          </p>
+        </div>
+
+        <img
+          class="image"
+          src="./imgs/3.png"
+          alt="scene"
+          data-type="file"
+          data-audio="./sounds/3.mp3" />
       </div>
     </div>
 
+    <audio
+      id="clapSound"
+      src="../../../../sounds/clap.mp3"
+      preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
     <footer>
       <div class="navigation">
-        <a href="../page58/index.html" class="button">
+        <a href="../../index.html" class="button">
           <div class="openai-logo">
             <img src="../../../../imgs/previous.png" alt="Previous" />
           </div>
@@ -63,7 +88,7 @@
           <img src="../../../../imgs/home.png" width="130" alt="Home" />
         </a>
 
-        <a href="../page60/index.html" class="button">
+        <a href="../../index.html" class="button">
           <div class="openai-logo">
             <img src="../../../../imgs/next.png" alt="next" />
           </div>
@@ -71,6 +96,7 @@
       </div>
     </footer>
 
+    <script src="./script.js"></script>
     <script src="../../../../master.js"></script>
   </body>
 </html>
