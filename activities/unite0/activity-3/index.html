@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 0 - Ouiiiii, c’est la récré!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../../master.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <div
+          class="section-title"
+          data-type="file"
+          data-audio="./sounds/title.mp3">
+          <h2 class="animate-characters">
+            Activité (3) Lis les situations suivantes et choisis la bonne
+            réponse :-
+          </h2>
+          <img id="headset" src="../../../imgs/headset.png" alt="Headset" />
+        </div>
+        <section class="question-container">
+          <div class="question">
+            1. Si tu ne comprends pas, que dis-tu ?
+            <div class="choices">
+              <span class="choice" isCorrect="false"
+                >a) Ouvrez vos livres à la page 7.</span
+              >
+              <span class="choice" isCorrect="true"
+                >b) Je ne comprends pas, madame !</span
+              >
+            </div>
+          </div>
+          <div class="question">
+            2. Si tu ne connais pas “Taisez-vous”, que demandes-tu ?
+            <div class="choices">
+              <span class="choice" isCorrect="true"
+                >a) Ça veut dire quoi “Taisez-vous”, madame ?</span
+              >
+              <span class="choice" isCorrect="false"
+                >b)C’est à quelle page ?</span
+              >
+            </div>
+          </div>
+          <div class="question">
+            3. Que répond la maîtresse pour expliquer “Taisez-vous” ?
+            <div class="choices">
+              <span class="choice" isCorrect="false"
+                >a) Toilettes, s’il vous plaît !</span
+              >
+              <span class="choice" isCorrect="true"
+                >b) Taisez-vous = silence.</span
+              >
+            </div>
+          </div>
+          <div class="question">
+            4. Si tu veux savoir sur quelle page lire, que demandes-tu ?
+            <div class="choices">
+              <span class="choice" isCorrect="true"
+                >a) C’est à quelle page ?</span
+              >
+              <span class="choice" isCorrect="false"
+                >b) Je ne comprends pas, madame !</span
+              >
+            </div>
+          </div>
+          <div class="question">
+            5. Que dit la maîtresse pour donner la page du livre ?
+            <div class="choices">
+              <span class="choice" isCorrect="false"
+                >a) Ça veut dire quoi “Taisez-vous” ?</span
+              >
+              <span class="choice" isCorrect="true"
+                >b) Ouvrez vos livres à la page 7.</span
+              >
+            </div>
+          </div>
+          <div class="question">
+            6. Si tu veux aller aux toilettes, que dis-tu ?
+            <div class="choices">
+              <span class="choice" isCorrect="true"
+                >a) Toilettes, s’il vous plaît !</span
+              >
+              <span class="choice" isCorrect="false"
+                >b) Ouvrez vos livres à la page 7</span
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <audio id="clapSound" src="../../../sounds/clap.mp3" preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../activity-2/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../index.html" class="home-btn">
+          <img src="../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../activity-4/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../master.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
