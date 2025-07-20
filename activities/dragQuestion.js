@@ -1,6 +1,6 @@
 (function () {
   let choices = document.querySelectorAll(".choice");
-  let questions = document.querySelectorAll(".question-item");
+  let questions = document.querySelectorAll(".dots");
   let dragWord,
     offsetX,
     offsetY = 0;
@@ -48,7 +48,7 @@
 
   function dragDrop() {
     console.log("drag dropped");
-    const dots = this.querySelector(".dots");
+    const dots = this;
     if (!dots) return;
     if (dots.getAttribute("answer") == dragWord.getAttribute("answer")) {
       dots.innerText = "";
@@ -63,7 +63,6 @@
   }
 
   function touchStart(e) {
-    // console.log("touch started");
     dragWord = this;
 
     const touch = e.touches[0];
