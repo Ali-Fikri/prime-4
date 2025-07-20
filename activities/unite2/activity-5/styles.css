@@ -47,6 +47,7 @@
 .question-item {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -95,5 +96,11 @@
   }
   #headset {
     width: 3rem;
+  }
+  .choices {
+    font-size: 1rem;
+  }
+  .answer-container {
+    font-size: 1rem;
   }
 }
