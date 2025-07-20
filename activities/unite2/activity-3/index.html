@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 2 - C’est bizarre!</title>
+    <link rel="stylesheet" href="../../../master.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="letters-container">
+        <section class="section">
+          <div
+            class="section-title"
+            data-type="file"
+            data-audio="./sounds/title.mp3">
+            <h2 class="animate-characters">Activité (3) Mets en ordre :-</h2>
+            <img id="headset" src="../../../imgs/headset.png" alt="Headset" />
+          </div>
+
+          <div class="sentences">
+            <!-- 1 -->
+            <div
+              class="sentence"
+              data-ordered="Dans ma cuisine, il y a un lavabo">
+              <div class="words-bank">
+                <div class="word" draggable="true">ma</div>
+                <div class="word" draggable="true">il</div>
+                <div class="word" draggable="true">y</div>
+                <div class="word" draggable="true">a</div>
+                <div class="word" draggable="true">un</div>
+                <div class="word" draggable="true">Dans</div>
+                <div class="word" draggable="true">cuisine,</div>
+                <div class="word" draggable="true">lavabo</div>
+              </div>
+              <div class="drop-zone"></div>
+              <div class="result"></div>
+            </div>
+
+            <!-- 2 -->
+            <div
+              class="sentence"
+              data-ordered="Combien de pièces dans ta maison ?">
+              <div class="words-bank">
+                <div class="word" draggable="true">dans</div>
+                <div class="word" draggable="true">pièces</div>
+                <div class="word" draggable="true">ta</div>
+                <div class="word" draggable="true">Combien de</div>
+                <div class="word" draggable="true">maison ?</div>
+              </div>
+              <div class="drop-zone"></div>
+              <div class="result"></div>
+            </div>
+
+            <!-- 3 -->
+            <div class="sentence" data-ordered="Les élèves aiment leur école">
+              <div class="words-bank">
+                <div class="word" draggable="true">leur</div>
+                <div class="word" draggable="true">Les</div>
+                <div class="word" draggable="true">école</div>
+                <div class="word" draggable="true">élèves</div>
+                <div class="word" draggable="true">aiment</div>
+              </div>
+              <div class="drop-zone"></div>
+              <div class="result"></div>
+            </div>
+
+            <!-- 4 -->
+            <div
+              class="sentence"
+              data-ordered="Je me douche dans la salle de bains">
+              <div class="words-bank">
+                <div class="word" draggable="true">douche</div>
+                <div class="word" draggable="true">douche</div>
+                <div class="word" draggable="true">la</div>
+                <div class="word" draggable="true">dans</div>
+                <div class="word" draggable="true">Je</div>
+                <div class="word" draggable="true">salle</div>
+                <div class="word" draggable="true">de</div>
+                <div class="word" draggable="true">bains</div>
+              </div>
+              <div class="drop-zone"></div>
+              <div class="result"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <audio
+        id="clapSound"
+        src="../../../sounds/clap.mp3"
+        preload="auto"></audio>
+      <audio
+        id="inCorrectSound"
+        src="../../../sounds/incorrect.mp3"
+        preload="auto"></audio>
+
+      <footer>
+        <div class="navigation">
+          <a href="../activity-2/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../imgs/previous.png" alt="Previous" />
+            </div>
+          </a>
+
+          <a href="../../../index.html" class="home-btn">
+            <img src="../../../imgs/home.png" width="130" alt="Home" />
+          </a>
+
+          <a href="../activity-4/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../imgs/next.png" alt="next" />
+            </div>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../handleMatch.js"></script>
+    <script src="../../../../master.js"></script>
+  </body>
+</html>
