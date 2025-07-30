@@ -382,6 +382,11 @@ body {
   color: #fff;
 }
 
+.scale {
+  scale: 1.1;
+  cursor: pointer;
+}
+
 /* Animated headers */
 .animate-characters {
   background-image: linear-gradient(

@@ -17,7 +17,8 @@ document.querySelectorAll("[data-type]").forEach((element) => {
       currentAudio = new Audio(audioSrc);
       currentAudio.play();
 
-      element.style.transform = "scale(1.1)";
+      element.classList.add("scale");
+      console.log(element.classList);
     } else if (type === "tts") {
       const text = element.dataset.text;
       const utterance = new SpeechSynthesisUtterance(text);
@@ -27,7 +28,7 @@ document.querySelectorAll("[data-type]").forEach((element) => {
   });
 
   element.addEventListener("mouseleave", () => {
-    element.style.transform = "scale(1)";
+    element.classList.remove("scale");
   });
 });
 
