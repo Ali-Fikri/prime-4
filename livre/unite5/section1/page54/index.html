@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 5 - Vive la fête!</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="board">
+      <div class="content">
+        <div class="question-container">
+          <div
+            class="section-title"
+            data-type="file"
+            data-audio="./sounds/title.mp3">
+            <h2 class="animate-characters">Observe les photos puis choisis</h2>
+          </div>
+          <div class="choices">
+            (
+            <span class="choice" draggable="true" answer="Il fait mauvais"
+              >Il fait mauvais</span
+            >
+            -
+            <span class="choice" draggable="true" answer="Il fait beau"
+              >Il fait beau</span
+            >
+            -
+            <span class="choice" draggable="true" answer="Il y a du vent"
+              >Il y a du vent</span
+            >
+            -
+            <span class="choice" draggable="true" answer="Il fait chaud"
+              >Il fait chaud</span
+            >
+            -
+            <span class="choice" draggable="true" answer="Il neige"
+              >Il neige</span
+            >
+            -
+            <span class="choice" draggable="true" answer="Il pleut"
+              >Il pleut</span
+            >
+            )
+          </div>
+        </div>
+        <br />
+        <div class="answer-container">
+          <div class="question-item">
+            <img src="./imgs/1-1.png" alt="image" class="image" />
+            <span class="dots" answer="Il y a du vent">.................</span>
+          </div>
+          <div class="question-item">
+            <img src="./imgs/1-2.png" alt="image" class="image" />
+            <span class="dots" answer="Il fait beau">.................</span>
+          </div>
+          <div class="question-item">
+            <img src="./imgs/1-3.png" alt="image" class="image" />
+            <span class="dots" answer="Il fait chaud">.................</span>
+          </div>
+          <div class="question-item">
+            <img src="./imgs/1-4.png" alt="image" class="image" />
+            <span class="dots" answer="Il pleut">.................</span>
+          </div>
+          <div class="question-item">
+            <img src="./imgs/1-5.png" alt="image" class="image" />
+            <span class="dots" answer="Il fait mauvais">.................</span>
+          </div>
+          <div class="question-item">
+            <img src="./imgs/1-6.png" alt="image" class="image" />
+            <span class="dots" answer="Il neige">.................</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <audio
+      id="clapSound"
+      src="../../../../sounds/clap.mp3"
+      preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../../index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" alt="Home" />
+        </a>
+
+        <a href="../page55/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../master.js"></script>
+    <script src="../../../../activities/dragQuestion.js"></script>
+  </body>
+</html>

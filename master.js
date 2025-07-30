@@ -16,12 +16,18 @@ document.querySelectorAll("[data-type]").forEach((element) => {
       const audioSrc = element.dataset.audio;
       currentAudio = new Audio(audioSrc);
       currentAudio.play();
+
+      element.style.transform = "scale(1.1)";
     } else if (type === "tts") {
       const text = element.dataset.text;
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = "fr-FR";
       synth.speak(utterance);
     }
+  });
+
+  element.addEventListener("mouseleave", () => {
+    element.style.transform = "scale(1)";
   });
 });
 

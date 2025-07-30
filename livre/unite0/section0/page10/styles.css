@@ -57,11 +57,19 @@ body {
   }
 }
 
+.column-title {
+  font-size: 2rem;
+}
+
 @media (max-width: 990px) {
   .board {
     padding: 2rem 0.5rem;
   }
   .script-title {
     font-size: 1.5rem;
+  }
+
+  .column-title {
+    font-size: 1.2rem;
   }
 }

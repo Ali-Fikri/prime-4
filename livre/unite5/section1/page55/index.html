@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unité 5 - Vive la fête!</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <section class="board">
+        <div class="content">
+          <div class="images">
+            <img
+              src="./imgs/1-1.png"
+              alt="Image"
+              data-type="file"
+              data-audio="./sounds/1-1.mp3" />
+            <img
+              src="./imgs/1-2.png"
+              alt="Image"
+              data-type="file"
+              data-audio="./sounds/1-2.mp3" />
+          </div>
+          <div class="question">
+            <h2 class="section-title animate-characters">Associe</h2>
+            <div class="row">
+              <div class="letter" data-match="2">
+                1- Jad <span class="dot"></span>
+              </div>
+
+              <div class="image" data-id="1">
+                se promènent <span class="dot"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="letter" data-match="1">
+                2- Emma et Nour <span class="dot"></span>
+              </div>
+              <div class="image" data-id="2">
+                se promène <span class="dot"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="letter" data-match="5">
+                3- Simon et moi <span class="dot"></span>
+              </div>
+              <div class="image" data-id="3">
+                vous promenez <span class="dot"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="letter" data-match="3">
+                4- Lucas et toi <span class="dot"></span>
+              </div>
+              <div class="image" data-id="4">
+                <span class="dot"></span> te promènes
+              </div>
+            </div>
+            <div class="row">
+              <div class="letter" data-match="4">
+                5- tu <span class="dot"></span>
+              </div>
+              <div class="image" data-id="5">
+                <span class="dot"></span> nous promenons
+              </div>
+            </div>
+            <svg id="svg">
+              <defs>
+                <marker
+                  id="arrow"
+                  markerWidth="10"
+                  markerHeight="10"
+                  refX="6"
+                  refY="3"
+                  orient="auto">
+                  <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+                </marker>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        <audio
+          id="clapSound"
+          src="../../../../sounds/clap.mp3"
+          preload="auto"></audio>
+        <audio
+          id="inCorrectSound"
+          src="../../../../sounds/incorrect.mp3"
+          preload="auto"></audio>
+      </section>
+
+      <footer>
+        <div class="navigation">
+          <a href="../page54/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../../imgs/previous.png" alt="previous" />
+            </div>
+          </a>
+          <a href="../../../../index.html" class="home-btn">
+            <img src="../../../../imgs/home.png" width="130" alt="Home" />
+          </a>
+
+          <a href="../page56/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../../imgs/next.png" alt="next" />
+            </div>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../../../activities/associate.js"></script>
+    <script src="../../../../master.js"></script>
+  </body>
+</html>

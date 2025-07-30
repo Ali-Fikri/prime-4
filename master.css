@@ -87,7 +87,7 @@ body {
   display: flex;
   width: 60%;
   justify-content: center;
-  background: url("./imgs/green-brush.png");
+  background-color: blanchedalmond;
   align-items: center;
   gap: 2rem;
   font-size: 2.25rem;
@@ -95,6 +95,12 @@ body {
   padding: 0 2rem;
   text-shadow: 2px 2px 0px #ffffff;
   justify-self: center;
+  box-shadow: #f8b6d5 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .unite-subtitle {
