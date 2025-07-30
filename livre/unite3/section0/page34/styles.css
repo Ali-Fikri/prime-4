@@ -51,6 +51,14 @@ body {
   border-radius: 0.5rem;
 }
 
+span {
+  display: inline;
+
+  &:hover {
+    background-color: yellow;
+  }
+}
+
 @media (max-width: 990px) {
   .board {
     padding: 2rem 0.5rem;
